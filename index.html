@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Clarices Patisserie | Cafeteria & Confeitaria</title>
+  <meta name="description" content="Clarices Patisserie — cafeteria e confeitaria em Cohajap. Bolos, doces, cookies, cafés, cestas, presentes e encomendas.">
+  <meta name="theme-color" content="#A33518">
+
+  <!-- Favicon vetorial baseado na identidade da Clarices -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Tipografia elegante + sans moderna. O site continua funcionando sem internet usando fallbacks. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Barra de progresso de leitura -->
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Clarices Patisserie — início">
+        <span class="brand-logo-wrap">
+          <img class="brand-logo" src="assets/logo.png" alt="Logo Clarices Patisserie">
+          <!-- Fallback vetorial caso a imagem não carregue -->
+          <svg class="brand-logo-fallback" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="50" fill="#A33518"/>
+            <path d="M67 60c-5 12-17 20-30 17-14-3-21-16-17-29 3-11 13-18 24-18 10 0 18 6 18 15 0 8-6 14-14 14-6 0-10-4-10-9 0-4 3-7 7-7"
+                  fill="none" stroke="#FAF0DD" stroke-width="9" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>Clarices</strong>
+          <small>PATISSERIE</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#cestas">Cestas</a>
+        <a href="#encomendas">Encomendas</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#localizacao">Onde estamos</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary btn-small js-whatsapp" data-message="Oi! Vim pelo site da Clarices e gostaria de fazer um pedido.">
+          Pedir no WhatsApp <span aria-hidden="true">↗</span>
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Menu mobile">
+      <a href="#inicio">Início</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#cestas">Cestas</a>
+      <a href="#encomendas">Encomendas</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#localizacao">Onde estamos</a>
+      <a class="js-whatsapp" data-message="Oi! Vim pelo site da Clarices e gostaria de fazer um pedido.">Pedir no WhatsApp ↗</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span>CAFETERIA • CONFEITARIA • COHAJAP</span>
+          </div>
+
+          <h1>Você nunca viu tanta coisa <em>gostosa</em> num só lugar.</h1>
+
+          <p class="hero-subtitle">
+            Até chegar aqui. ☕🍰 Um cantinho cheio de sabor, café quentinho,
+            doces caprichados e aquele clima gostoso de ficar mais cinco minutinhos.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary js-whatsapp" data-message="Oi! Vim pelo site da Clarices e quero fazer uma encomenda.">
+              Fazer encomenda <span>↗</span>
+            </a>
+            <a class="btn btn-ghost" href="#cardapio">
+              Ver cardápio <span>↓</span>
+            </a>
+          </div>
+
+          <div class="opening-status" id="openingStatus">
+            <span class="status-light"></span>
+            <div>
+              <strong>Verificando horário...</strong>
+              <small>Seg–Sex 15:00–20:00 • Sáb–Dom 14:30–21:00</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="hero-photo hero-photo-main placeholder-photo">
+            <!-- TROCAR POR FOTO: bolo ou sobremesa assinatura da Clarices -->
+            <span>FOTO PRINCIPAL</span>
+            <small>Bolo / sobremesa assinatura</small>
+          </div>
+
+          <div class="hero-photo hero-photo-small placeholder-photo">
+            <!-- TROCAR POR FOTO: café servido na mesa da Clarices -->
+            <span>FOTO</span>
+            <small>Café + doce</small>
+          </div>
+
+          <div class="hero-sticker">
+            <span>nada de chic,</span>
+            <strong>a gente tem é bossa.</strong>
+          </div>
+
+          <div class="hero-tape"></div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span>role para sentir o cheiro</span>
+        <i>↓</i>
+      </div>
+    </section>
+
+    <!-- FAIXA GRÁFICA -->
+    <div class="awning-strip" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- ESCOLHA SEU MOMENTO -->
+    <section class="moments section section-dark" id="momentos">
+      <div class="container">
+        <div class="section-heading light reveal">
+          <div>
+            <span class="eyebrow"><span class="eyebrow-dot"></span> ESCOLHA SEU MOMENTO</span>
+            <h2>Tem um Clarices<br><em>para cada vontade.</em></h2>
+          </div>
+          <p>Não precisa de ocasião especial. Às vezes, a ocasião é simplesmente estar com vontade.</p>
+        </div>
+
+        <div class="moment-grid">
+          <a class="moment-card moment-card-tall reveal" href="#cardapio">
+            <div class="moment-number">01</div>
+            <div class="moment-icon">☕</div>
+            <h3>Café da tarde</h3>
+            <p>Café, bolo e uma conversa que podia durar horas.</p>
+            <span class="moment-arrow">↗</span>
+          </a>
+
+          <a class="moment-card reveal reveal-delay" href="#cestas">
+            <div class="moment-number">02</div>
+            <div class="moment-icon">🎁</div>
+            <h3>Presentear</h3>
+            <p>Cestas e mimos para dizer “lembrei de você”.</p>
+            <span class="moment-arrow">↗</span>
+          </a>
+
+          <a class="moment-card reveal reveal-delay-2" href="#encomendas">
+            <div class="moment-number">03</div>
+            <div class="moment-icon">🎂</div>
+            <h3>Comemorar</h3>
+            <p>Bolos, doces e encomendas para fazer bonito.</p>
+            <span class="moment-arrow">↗</span>
+          </a>
+
+          <a class="moment-card reveal" href="#cardapio">
+            <div class="moment-number">04</div>
+            <div class="moment-icon">🍪</div>
+            <h3>Só porque sim</h3>
+            <p>Cookie quentinho. Sobremesa na taça. Precisa explicar?</p>
+            <span class="moment-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section class="menu-section section" id="cardapio">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow"><span class="eyebrow-dot"></span> CARDÁPIO</span>
+            <h2>Escolhas difíceis.<br><em>Problemas deliciosos.</em></h2>
+          </div>
+          <p>Um pouco de tudo que faz a gente voltar — e voltar trazendo alguém.</p>
+        </div>
+
+        <div class="category-tabs reveal" role="tablist" aria-label="Categorias do cardápio">
+          <button class="category-tab active" data-filter="todos">Tudo</button>
+          <button class="category-tab" data-filter="doces">Doces & Bolos</button>
+          <button class="category-tab" data-filter="cafe">Cafés</button>
+          <button class="category-tab" data-filter="salgados">Salgados</button>
+          <button class="category-tab" data-filter="presentes">Presentes</button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card menu-featured reveal" data-category="doces">
+            <div class="menu-image placeholder-photo">
+              <!-- TROCAR POR FOTO: bolo de chocolate / bolo assinatura -->
+              <span>FOTO DO BOLO</span>
+            </div>
+            <div class="menu-info">
+              <div>
+                <span class="menu-tag">ASSINATURA</span>
+                <h3>Bolos que fazem silêncio na mesa</h3>
+                <p>Daqueles que chegam e todo mundo para de conversar por alguns segundos.</p>
+              </div>
+              <a class="circle-arrow js-whatsapp" data-message="Oi! Gostaria de saber quais bolos estão disponíveis hoje.">↗</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay" data-category="cafe">
+            <div class="menu-image placeholder-photo">
+              <!-- TROCAR POR FOTO: café servido na Clarices -->
+              <span>FOTO DO CAFÉ</span>
+            </div>
+            <div class="menu-info">
+              <div>
+                <span class="menu-tag">CAFÉ</span>
+                <h3>Café passado com carinho</h3>
+                <p>Para acompanhar uma pausa que você estava precisando.</p>
+              </div>
+              <a class="circle-arrow js-whatsapp" data-message="Oi! Quero saber quais cafés e bebidas vocês têm hoje.">↗</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-category="doces">
+            <div class="menu-image placeholder-photo">
+              <!-- TROCAR POR FOTO: cookie -->
+              <span>FOTO DO COOKIE</span>
+            </div>
+            <div class="menu-info">
+              <div>
+                <span class="menu-tag">COOKIE</span>
+                <h3>Cookie para comer sem dividir</h3>
+                <p>E ninguém aqui vai julgar.</p>
+              </div>
+              <a class="circle-arrow js-whatsapp" data-message="Oi! Quais cookies vocês têm disponíveis hoje?">↗</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay" data-category="doces">
+            <div class="menu-image placeholder-photo">
+              <!-- TROCAR POR FOTO: sobremesa na taça -->
+              <span>FOTO DA TAÇA</span>
+            </div>
+            <div class="menu-info">
+              <div>
+                <span class="menu-tag">SOBREMESA</span>
+                <h3>Uma taça de “só mais uma”</h3>
+                <p>Camadas de felicidade servidas bem geladinhas.</p>
+              </div>
+              <a class="circle-arrow js-whatsapp" data-message="Oi! Quais sobremesas na taça vocês têm hoje?">↗</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-category="salgados">
+            <div class="menu-image placeholder-photo">
+              <!-- TROCAR POR FOTO: salgados -->
+              <span>FOTO DOS SALGADOS</span>
+            </div>
+            <div class="menu-info">
+              <div>
+                <span class="menu-tag">SALGADOS</span>
+                <h3>Porque doce não resolve tudo</h3>
+                <p>Opções salgadas para equilibrar a felicidade.</p>
+              </div>
+              <a class="circle-arrow js-whatsapp" data-message="Oi! Quais salgados vocês têm hoje?">↗</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay" data-category="presentes">
+            <div class="menu-image placeholder-photo">
+              <!-- TROCAR POR FOTO: cesta presenteável -->
+              <span>FOTO DA CESTA</span>
+            </div>
+            <div class="menu-info">
+              <div>
+                <span class="menu-tag">PRESENTES</span>
+                <h3>Cestas que dizem “pensei em você”</h3>
+                <p>Montadas para aniversários, namorados e dias comuns.</p>
+              </div>
+              <a class="circle-arrow js-whatsapp" data-message="Oi! Quero ver as opções de cestas e presentes da Clarices.">↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTAQUE / CESTAS -->
+    <section class="feature-section section" id="cestas">
+      <div class="container feature-grid">
+        <div class="feature-visual reveal">
+          <div class="feature-photo placeholder-photo">
+            <!-- TROCAR POR FOTO: cesta Clarices com doces e presentes -->
+            <span>FOTO DA CESTA</span>
+            <small>Cesta personalizada</small>
+          </div>
+          <div class="feature-note">
+            <span>feito para</span>
+            <strong>arrancar um sorriso</strong>
+          </div>
+        </div>
+
+        <div class="feature-content reveal reveal-delay">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> CESTAS & PRESENTES</span>
+          <h2>Um presente com cara de <em>“eu conheço você”.</em></h2>
+          <p>
+            Escolha os sabores, o clima e a ocasião. A Clarices monta uma cesta
+            bonita, gostosa e com aquele toque de carinho que não cabe em uma embalagem.
+          </p>
+
+          <ul class="check-list">
+            <li><span>✓</span> Cestas para datas especiais</li>
+            <li><span>✓</span> Opções para namorados</li>
+            <li><span>✓</span> Montagens personalizadas</li>
+            <li><span>✓</span> Encomendas sob consulta</li>
+          </ul>
+
+          <a class="btn btn-primary js-whatsapp" data-message="Oi! Quero montar uma cesta/presente com a Clarices. Podem me mostrar as opções?">
+            Quero montar uma cesta <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSO / ENCOMENDAS -->
+    <section class="process-section section section-cream" id="encomendas">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> ENCOMENDAS</span>
+          <h2>Você imagina.<br><em>A gente faz acontecer.</em></h2>
+          <p>Sem complicação, sem formulário de 47 páginas. É só chamar a gente.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <span class="step-number">01</span>
+            <div class="step-icon">💬</div>
+            <h3>Chama a Clarices</h3>
+            <p>Conta o que você quer, para quando e para qual ocasião.</p>
+          </div>
+          <div class="process-line" aria-hidden="true"></div>
+          <div class="process-step reveal reveal-delay">
+            <span class="step-number">02</span>
+            <div class="step-icon">📝</div>
+            <h3>A gente combina</h3>
+            <p>Alinhamos sabores, quantidade, detalhes e disponibilidade.</p>
+          </div>
+          <div class="process-line" aria-hidden="true"></div>
+          <div class="process-step reveal reveal-delay-2">
+            <span class="step-number">03</span>
+            <div class="step-icon">🎀</div>
+            <h3>Você recebe</h3>
+            <p>Tudo preparado com cuidado para chegar bonito e gostoso.</p>
+          </div>
+        </div>
+
+        <div class="process-cta reveal">
+          <p>Já sabe o que quer?</p>
+          <a class="btn btn-dark js-whatsapp" data-message="Oi! Quero fazer uma encomenda.">Falar sobre minha encomenda ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about-section section section-dark" id="sobre">
+      <div class="container about-grid">
+        <div class="about-content reveal">
+          <span class="eyebrow light"><span class="eyebrow-dot"></span> SOBRE A CLARICES</span>
+          <h2>Não é sobre parecer chique.<br><em>É sobre ser gostoso.</em></h2>
+          <p>
+            A Clarices nasceu para ser aquele lugar em que você entra pensando
+            “vou só tomar um café” e sai querendo provar metade da vitrine.
+          </p>
+          <p>
+            Tem madeira, planta, luz quentinha, conversa, bolo, café e personalidade.
+            Tem bossa. Tem afeto. Tem aquela vontade de ficar.
+          </p>
+
+          <div class="about-signature">
+            <div class="signature-mark">C</div>
+            <div>
+              <strong>Clarices Patisserie</strong>
+              <span>nada de chic, a gente tem é bossa.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-collage reveal reveal-delay">
+          <div class="collage-photo collage-main placeholder-photo">
+            <!-- TROCAR POR FOTO: interior da Clarices -->
+            <span>FOTO DO AMBIENTE</span>
+          </div>
+          <div class="collage-photo collage-small placeholder-photo">
+            <!-- TROCAR POR FOTO: detalhe de decoração / café -->
+            <span>FOTO</span>
+          </div>
+          <div class="collage-label">um cantinho<br>para chamar de seu</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="reviews section" id="avaliacoes">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow"><span class="eyebrow-dot"></span> QUEM JÁ FOI</span>
+            <h2>Palavras que deixam<br><em>a gente toda boba.</em></h2>
+          </div>
+          <div class="rating">
+            <strong>★★★★★</strong>
+            <span>clientes falando da experiência</span>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card reveal">
+            <div class="review-top">
+              <div class="avatar">A</div>
+              <div><strong>Cliente Clarices</strong><span>visita recente</span></div>
+              <b>★★★★★</b>
+            </div>
+            <p>“Um lugar muito aconchegante, com doces lindos e atendimento que faz a gente querer voltar.”</p>
+          </article>
+
+          <article class="review-card review-card-highlight reveal reveal-delay">
+            <span class="quote-mark">“</span>
+            <p>“Você entra para tomar um café e quando percebe já está escolhendo sobremesa, levando uma cesta e planejando a próxima visita.”</p>
+            <div class="review-author">— alguém que entendeu o espírito da Clarices</div>
+          </article>
+
+          <article class="review-card reveal reveal-delay-2">
+            <div class="review-top">
+              <div class="avatar">M</div>
+              <div><strong>Cliente Clarices</strong><span>encomenda</span></div>
+              <b>★★★★★</b>
+            </div>
+            <p>“Tudo muito caprichado. A apresentação é linda e o sabor entrega tudo o que promete.”</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section class="location-section section" id="localizacao">
+      <div class="container location-grid">
+        <div class="location-map reveal">
+          <div class="map-art">
+            <div class="map-grid-lines"></div>
+            <div class="map-road road-one"></div>
+            <div class="map-road road-two"></div>
+            <div class="map-road road-three"></div>
+            <div class="map-pin"><span>⌖</span></div>
+            <div class="map-label">CLARICES<br><small>COHAJAP</small></div>
+          </div>
+        </div>
+
+        <div class="location-content reveal reveal-delay">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> ONDE ESTAMOS</span>
+          <h2>Vem tomar um café<br><em>com a gente.</em></h2>
+
+          <div class="address-block">
+            <span class="address-icon">⌖</span>
+            <div>
+              <strong>Rua Auxiliar II, Nº 28</strong>
+              <span>Cohajap • São Luís – MA</span>
+            </div>
+          </div>
+
+          <div class="hours-block">
+            <span class="address-icon">◷</span>
+            <div>
+              <strong>Horário</strong>
+              <span>Seg a Sex: 15:00 – 20:00</span>
+              <span>Sáb e Dom: 14:30 – 21:00</span>
+            </div>
+          </div>
+
+          <div class="location-buttons">
+            <!-- Substitua o link abaixo pela URL exata do Google Maps, se quiser fixar o ponto exato. -->
+            <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Rua+Auxiliar+II%2C+28%2C+Cohajap%2C+S%C3%A3o+Lu%C3%ADs+-+MA" target="_blank" rel="noopener">
+              Abrir no Maps ↗
+            </a>
+            <a class="btn btn-outline-dark js-whatsapp" data-message="Oi! Quero ir até a Clarices. Podem me confirmar a localização?">
+              Tirar dúvida ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="final-cta section">
+      <div class="final-cta-bg"></div>
+      <div class="container final-cta-inner reveal">
+        <div class="final-logo">
+          <img src="assets/logo.png" alt="Clarices Patisserie">
+        </div>
+        <span class="eyebrow light"><span class="eyebrow-dot"></span> ATÉ LOGO</span>
+        <h2>Vai deixar a vontade<br><em>passar?</em></h2>
+        <p>Tem café. Tem bolo. Tem presente. Tem desculpa também — mas você não precisa dela.</p>
+        <a class="btn btn-light js-whatsapp" data-message="Oi! Vim pelo site da Clarices. Quero saber o que tem disponível hoje.">
+          Quero falar com a Clarices <span>↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#inicio">
+          <span class="brand-logo-wrap">
+            <img class="brand-logo" src="assets/logo.png" alt="Logo Clarices Patisserie">
+          </span>
+          <span class="brand-copy">
+            <strong>Clarices</strong>
+            <small>PATISSERIE</small>
+          </span>
+        </a>
+        <p>Você nunca viu tanta coisa gostosa num só lugar... até chegar aqui. 🧡</p>
+      </div>
+
+      <div class="footer-column">
+        <strong>Explorar</strong>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#cestas">Cestas</a>
+        <a href="#encomendas">Encomendas</a>
+        <a href="#sobre">Sobre nós</a>
+      </div>
+
+      <div class="footer-column">
+        <strong>Visite</strong>
+        <span>Rua Auxiliar II, Nº 28</span>
+        <span>Cohajap • São Luís – MA</span>
+        <span>Seg–Sex 15h–20h</span>
+        <span>Sáb–Dom 14h30–21h</span>
+      </div>
+
+      <div class="footer-column">
+        <strong>Fale com a gente</strong>
+        <a class="js-whatsapp" data-message="Oi! Vim pelo site da Clarices e gostaria de falar com vocês.">WhatsApp ↗</a>
+        <a href="https://www.instagram.com/claricespatisserie/" target="_blank" rel="noopener">@claricespatisserie ↗</a>
+        <a href="#localizacao">Como chegar ↗</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Clarices Patisserie. Feito com café e carinho.</span>
+      <span>São Luís • Maranhão</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

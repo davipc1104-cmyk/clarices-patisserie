@@ -1,0 +1,44 @@
+# Clarices Patisserie — Landing Page
+
+## Estrutura
+
+- `index.html`
+- `style.css`
+- `script.js`
+- `assets/logo.png`
+- `assets/favicon.svg`
+
+## Como abrir
+
+1. Abra esta pasta no VS Code.
+2. Abra `index.html`.
+3. Use a extensão Live Server (se tiver) e clique em "Go Live".
+4. Para publicar, envie todos os arquivos mantendo a pasta `assets`.
+
+## IMPORTANTE — WhatsApp
+
+Abra `script.js` e altere:
+
+const WHATSAPP_NUMBER = "55SEUNUMERO";
+
+Exemplo:
+
+const WHATSAPP_NUMBER = "5598987654321";
+
+Use somente números, sem +, espaços, parênteses ou hífen.
+
+## Fotos
+
+Os blocos do site são placeholders. Procure no `index.html` pelos comentários:
+
+<!-- TROCAR POR FOTO: ... -->
+
+Quando tiver as fotos reais, você pode trocar o bloco pelo `<img>` correspondente.
+
+## Google Maps
+
+O botão "Abrir no Maps" já usa uma busca pelo endereço:
+
+Rua Auxiliar II, Nº 28, Cohajap, São Luís - MA
+
+Se você tiver o link exato do ponto comercial no Google Maps, substitua o `href` no `index.html`.
